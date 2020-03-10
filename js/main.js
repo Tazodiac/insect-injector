@@ -43,7 +43,7 @@ var insects = [
       eatsPlants: true
     }
   }
-]
+];
 
 var writeInsects = function (bugs) {
   document.write('<h1>Insects</h1>');
