@@ -1,9 +1,41 @@
-// Create your variable here, name it `insects`
-
-
-// ##########################################################
-// START DO NOT CHANGE ZONE
-// ##########################################################
+var insects = [
+  {
+    name: 'Ant Nest Beetle',
+    img: 'ant-nest-beetle.jpg',
+    family: 'Carabidae',
+    size: [6, 20],
+    eatsInsects: true,
+    eatsDung: false,
+    eatsPlants: false
+  },
+  {
+    name: 'Dung Beetle',
+    img: 'dung-beetle.jpg',
+    family: 'Scarabidae',
+    size: [20, 30],
+    eatsInsects: false,
+    eatsDung: true,
+    eatsPlants: false
+  },
+  {
+    name: 'Stag Beetle',
+    image: 'stag-beetle.jpg',
+    family: 'Lucanidae',
+    size: [5, 120],
+    eatsInsects: false,
+    eatsDung: false,
+    eatsPlants: true
+  },
+  {
+    name: 'Tortoise Beetle',
+    image: 'tortoise-beetle.jpg',
+    family: 'Cassidinae',
+    size: [1, 18],
+    eatsInsects: false,
+    eatsDung: false,
+    eatsPlants: true
+  }
+]
 
 var writeInsects = function (bugs) {
   document.write('<h1>Insects</h1>');
@@ -23,15 +55,15 @@ var writeInsects = function (bugs) {
 
     document.write('<dd>');
 
-    if (bug.food.eatsInsects == True) {
+    if (bug.food.eatsInsects == true) {
       document.write('Insects');
     }
 
-    if (bug.food.eatsDung == True) {
+    if (bug.food.eatsDung == true) {
       document.write('Dung');
     }
 
-    if (bug.food.eatsPlants == True) {
+    if (bug.food.eatsPlants == true) {
       document.write('Plants');
     }
 
