@@ -23,15 +23,15 @@ var writeInsects = function (bugs) {
 
     document.write('<dd>');
 
-    if (bug.food.eatsInsects) {
+    if (bug.food.eatsInsects == True) {
       document.write('Insects');
     }
 
-    if (bug.food.eatsDung) {
+    if (bug.food.eatsDung == True) {
       document.write('Dung');
     }
 
-    if (bug.food.eatsPlants) {
+    if (bug.food.eatsPlants == True) {
       document.write('Plants');
     }
 
